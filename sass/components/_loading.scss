@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as varbs;
+
+.loading-animation {
+  opacity: 0.6;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding-top: 50%;
+
+  div {
+    width: 80px;
+    height: 80px;
+    background: url("/images/circle-loader-gif-2.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    z-index: 100;
+  }
+}
+
+.progress-bar-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+
+  label {
+    color: white;
+    font-size: 12px;
+  }
+}
+
+#progress-bar {
+  width: 50%;
+  height: 8px;
+  margin-top: 0.5%;
+  color: varbs.$highlight-color;
+}

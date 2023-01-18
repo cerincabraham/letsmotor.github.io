@@ -1,0 +1,15 @@
+:root {
+  --litepicker-container-months-color-bg: #ffffff;
+  --litepicker-container-months-box-shadow-color: rgb(82, 82, 82);
+  --litepicker-month-header-color: #171621;
+  --litepicker-button-prev-month-color: #171621;
+  --litepicker-button-next-month-color: #171621;
+  --litepicker-button-prev-month-color-hover: #21882f;
+  --litepicker-button-next-month-color-hover: #21882f;
+  --litepicker-day-color-hover: #2196f3;
+  --litepicker-is-start-color: #fff;
+  --litepicker-is-start-color-bg: #21882f;
+  --litepicker-is-in-range-color: #8fac94;
+  --litepicker-is-end-color: #fff;
+  --litepicker-is-end-color-bg: #21882f;
+}

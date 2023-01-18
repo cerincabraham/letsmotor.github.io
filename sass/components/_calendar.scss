@@ -1,0 +1,35 @@
+.date-clicked {
+  padding-right: 0;
+}
+
+.litepicker {
+  font-family: "Sora", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  display: none;
+  .container__months {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    /* -webkit-box-shadow: 0 0 2px var(--litepicker-container-months-box-shadow-color); */
+    box-shadow: 2px 2px 7px #1a1f2d65;
+  }
+  .container__days {
+    .day-item.is-start-date {
+      color: var(--litepicker-is-start-color);
+      background-color: var(--litepicker-is-start-color-bg);
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .day-item.is-end-date {
+      color: var(--litepicker-is-end-color);
+      background-color: var(--litepicker-is-end-color-bg);
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}

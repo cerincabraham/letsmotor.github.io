@@ -1,0 +1,247 @@
+@keyframes property-slide-in-one {
+  from {
+    bottom: -50%;
+  }
+
+  to {
+    bottom: -13%;
+  }
+}
+
+@keyframes property-slide-out-one {
+  from {
+    bottom: -13%;
+  }
+
+  to {
+    bottom: -50%;
+  }
+}
+
+div .property-slide-in-one {
+  animation: property-slide-in-one 1s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+div .property-slide-out-one {
+  animation: property-slide-out-one 1s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes property-slide-in-two {
+  from {
+    bottom: -13%;
+  }
+
+  to {
+    bottom: 0%;
+  }
+}
+
+@keyframes property-slide-out-two {
+  from {
+    bottom: 0%;
+  }
+
+  to {
+    bottom: -13%;
+  }
+}
+
+@keyframes property-slide-out-all {
+  from {
+    bottom: 0%;
+  }
+
+  to {
+    bottom: -27%;
+  }
+}
+
+div .property-slide-in-two {
+  animation: property-slide-in-two 1s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+div .property-slide-out-two {
+  animation: property-slide-out-two 1s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+div .property-slide-out-all {
+  animation: property-slide-out-all 1s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes property-slide-out-small {
+  from {
+    bottom: -13%;
+  }
+
+  to {
+    bottom: -27%;
+  }
+}
+
+div .property-slide-out-small {
+  animation: property-slide-out-small 1s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes panel-slide-in {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes panel-slide-out {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+div .panel-slide-in {
+  animation: panel-slide-in 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+div .panel-slide-out {
+  animation: panel-slide-out 1s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes msg-animate-in {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    top: 50%;
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+  }
+}
+
+@keyframes msg-animate-out {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    top: -15%;
+  }
+}
+
+.warning-msg.msg-animate-in {
+  animation: msg-animate-in 0.5s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.warning-msg.msg-animate-out {
+  animation: msg-animate-out 0.5s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes page-slide-in {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes page-slide-out {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.mobile-wrapper .page-left-slide-in {
+  animation: page-slide-in 0.8s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.mobile-wrapper .page-left-slide-out {
+  animation: page-slide-out 0.8s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.mobile-wrapper .page-right-slide-in {
+  animation: page-slide-in 0.8s;
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lower-menu-in {
+  from {
+    bottom: -5%;
+  }
+
+  to {
+    bottom: 2%;
+  }
+}
+@keyframes lower-menu-out {
+  from {
+    bottom: 2%;
+  }
+
+  to {
+    bottom: -5%;
+  }
+}
+
+.mobile-wrapper .lower-menu-in,
+.mobile-wrapper .lower-menu-out {
+  animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.lower-menu-in {
+  animation: lower-menu-in 0.8s;
+}
+
+.lower-menu-out {
+  animation: lower-menu-out 0.8s;
+}

@@ -1,0 +1,39 @@
+form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form div {
+  width: 250px;
+  height: 35px;
+  background-color: transparent;
+  color: #ffffff;
+  border-style: none;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+}
+
+form div input {
+  width: 80%;
+  height: 31px;
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+  margin: 2px 2px 2px 38px;
+  font-size: 11px;
+  font-weight: 300;
+  font-style: normal;
+  outline: none;
+}
+
+form div span {
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  color: #0d9ec2;
+}

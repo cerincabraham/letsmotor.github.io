@@ -1,0 +1,27 @@
+.information-box {
+  height: 270px;
+  border-bottom: 50px solid #21882f;
+  h3 {
+    color: red;
+  }
+  .line {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .warning-msg-close {
+    bottom: -16%;
+    color: white;
+  }
+}
+
+.info-btn.icon-disable {
+  display: none;
+}
+
+body.active-popup .information-box.active-popup {
+  top: 50%;
+  opacity: 1;
+  margin-top: 0px;
+  transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out,
+    margin-top 300ms ease-in-out;
+}

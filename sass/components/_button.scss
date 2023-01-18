@@ -1,0 +1,140 @@
+@use "../abstracts/variables" as varbs;
+
+button.fill {
+  background-color: varbs.$highlight-color;
+}
+
+button {
+  width: 250px;
+  border-style: none;
+  background-color: transparent;
+  border: 1px solid varbs.$highlight-color;
+  color: white;
+  font-size: 11px;
+  font-weight: 300;
+  font-style: normal;
+  border-radius: 5px;
+  padding-block: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  /* z-index: 15; */
+}
+
+.info-btn {
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  color: varbs.$highlight-color;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 25;
+}
+
+.block {
+  width: 105px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: varbs.$dark-hight-light;
+  color: varbs.$highlight-color;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.switch-body {
+  width: 30px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #d5d5d5;
+  position: relative;
+}
+
+.switch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: varbs.$highlight-color;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 118px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.radio_container1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cecece;
+  width: 35px;
+  height: 14px;
+  border-radius: 9px;
+  box-shadow: inset 0.5px 0.5px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.radio_container1 label {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  border-radius: 9999px;
+  overflow: hidden;
+  transition: linear 0.3s;
+  color: #6e6e6edd;
+}
+
+.radio_container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cecece;
+  width: 118px;
+  height: 18px;
+  border-radius: 9px;
+  box-shadow: inset 0.5px 0.5px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+input[type="radio"] {
+  appearance: none;
+  display: none;
+}
+
+.radio_container2 label {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  width: 36px;
+  height: 14px;
+  text-align: center;
+  border-radius: 9999px;
+  overflow: hidden;
+  transition: linear 0.3s;
+  color: #6e6e6edd;
+}
+
+input[type="radio"]:checked + label {
+  background-color: varbs.$highlight-color;
+  color: #f1f3f5;
+  font-weight: 900;
+  transition: 0.3s;
+}

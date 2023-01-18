@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as varbs;
+
+.calculate {
+  width: 100%;
+  height: 90%;
+  background-color: #e9e9e9;
+  color: varbs.$panel-bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-inline: 30px;
+  position: relative;
+}
+
+.calculation-details-panel {
+  height: 21%;
+  background-color: #ffffff;
+  color: varbs.$panel-bg-color;
+  bottom: -25%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 18;
+  transition: bottom 1s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+.calculation-details-panel h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.total-days-details {
+  padding-left: 3px;
+  padding-bottom: 5px;
+}
+
+.calculation-horizontal-split-normal,
+.calculation-horizontal-split-total {
+  width: 100%;
+  height: 20px;
+  /* display: flex;
+  flex-direction: row;
+justify-content: space-between;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+.calculation-horizontal-split-total {
+  grid-template-columns: 4fr 2fr 2fr;
+}
+
+.calculation-horizontal-split-normal h4 {
+  color: #d4d4d4;
+}
+
+.calculation-horizontal-split-normal h4.dark {
+  color: varbs.$panel-bg-color;
+}
+
+.center-split {
+  width: 140px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calculation-horizontal-split-switch h4 {
+  color: #d4d4d4;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #dadada;
+  margin-top: 10px;
+}

@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as varbs;
+
+.warning-msg-box,
+.information-box {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: varbs.$panel-bg-color;
+  margin-top: -25px;
+  border-radius: 15px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  border-bottom: 50px solid varbs.$alert-color;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: top 0ms ease-in-out 300ms, opacity 300ms ease-in-out 300ms,
+    margin-top 300ms ease-in-out;
+}
+
+.warning-msg-box h3 {
+  width: 80%;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.warning-msg-box .material-symbols-outlined,
+.information-box .material-symbols-outlined {
+  font-size: 50px;
+  color: varbs.$alert-color;
+}
+
+.warning-msg-box .warning-msg-close {
+  bottom: -22%;
+}
+
+.warning-msg-close {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding-block: 8px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 200;
+  cursor: pointer;
+}
+
+body.active-popup {
+  .warning-msg-box.active-popup {
+    top: 50%;
+    opacity: 1;
+    margin-top: 0px;
+    transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out,
+      margin-top 300ms ease-in-out;
+  }
+
+  .mobile-wrapper {
+    filter: blur(5px);
+    background: rgba(0, 0, 0, 0.08);
+    transition: filter 0ms ease-in-out 0ms;
+    z-index: 240;
+  }
+}
+
+.warning-color {
+  color: rgb(255, 27, 27);
+}
